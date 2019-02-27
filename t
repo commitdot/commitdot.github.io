@@ -96,3 +96,59 @@ body {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
 }
+
+
+
+
+
+
+
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  background: #0af;
+  width: 3500px;
+  height: 3400px;
+  margin-left: -800px;
+  margin-top: 450px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 20s infinite linear;
+}
+
+.wave.-three {
+  animation: drift 19s infinite linear;
+}
+
+.wave.-two {
+  animation: drift 18s infinite linear;
+  opacity: .1;
+  background: black;
+}
+
+
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
