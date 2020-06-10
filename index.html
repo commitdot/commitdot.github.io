@@ -365,6 +365,34 @@ body{
   padding-left: 35px;
 }
 
+.boxybutton {
+    border: 0;
+    line-height: 2.5;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    
+    border-radius: 30px;
+    background-color: rgb(72, 99, 255);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.boxybutton:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.boxybutton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
   </style>
 
 
@@ -407,7 +435,8 @@ body{
     <p>Certified product designer - TUdelft, IDEO and UTHealth. <br> I've helped Philippine NGO initiatives and few startup projects successfully.</p>
     <p class="lead">
       <a clas="bt btn-primary btn-lg" href="#" role="button"></a>
-      <a href="https://dribbble.com/commitdot" target="_blank" class="btn-link">#View Dribbble UI</a>
+      
+      <a href="https://dribbble.com/commitdot" target="_blank" class="boxybutton">View My Dribbble UI</a>
     </p>
   </div>
 
