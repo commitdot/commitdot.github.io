@@ -1,551 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richard Balauro | Ree</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia&display=swap" rel="stylesheet">
   
-  </head>
-
   <style>
-    
-    .wave {
-      opacity: 0.5;
-      position: absolute;
-      top: 3%; 
-      left: 1%;
-      background: rgb(68, 255, 199);
-      align-self: center;
-      width: 320px;
-      height: 320px;
-      margin-left: -200px;
-      margin-top: 50px;
-      transform-origin: 50% 48%;
-      border-radius: 4%;
-      animation: drift 50s infinite linear;
-     
-    }
-
-    @keyframes drift {
-      from {
-        transform: rotate(0deg);
-      }
-
-      from {
-        transform: rotate(360deg);
-      }
-    }
-
-    
-}
-    
-    * {font-family: -apple-system, BlinkMacSystemFont,
-    “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
-    “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
-    sans-serif;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia&display=swap');
     
     body {
-      background-image: linear-gradient(to right, green, blue, indigo, violet);
-      color: white; font-family: Poppins, sans-serif;
-      
-    }
-
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      font-family: Roboto;
-
-    }
-
-
-    .nav-link {
-      color: white;
-    }
-
-    .recenter {
-      align-items: justify;
-      position:
-    }
-
-    .stephen {
-      margin-left: 50px;
-      padding: 80px;
-      font-style: italic;
-      font-size: 30px;
-      text-align: justify;
-
-
-    }
-
-    .figma {
-      position: absolute;
-      margin-top: 700px;
-      margin-left: 300px;
-      margin-right: 300px;
-      align-content: center;
-      align-items: center;
-      top: 50px;
-
-    }
-
-    .stepone {
-      background: black;
-
-    }
-
-    .stepone {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0px;
-      margin-bottom: 00px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-
-    }
-
-    .lead {
-      margin-top: 25px;
-    }
-
-    p { 
-      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
     }
     
-    h1 {
-      margin-top: 200px;
-      margin-left: 100px;
-      padding-bottom: 25px; 
-      font-family: Sofia; sans-serif;
-
+    .title-font {
+      font-family: 'Sofia', sans-serif;
     }
 
-
-    h2 {
-      padding-top: 5px;
-    }
-
-
-    .firstButton {
-      margin-top: -100px;
-    }
-
-    h5 {
-      margin-top: -35px;
-    }
-
-    h3 {
-      margin-top: 0px;
-    }
-
-    }
-
-    .foot {
-      background: black;
-    }
-
-    .foot {
-      margin-top: 150px;
-
-    }
-
-    .foot {
-      height: 300px;
-      text-align: left;
-      color: white;
-      padding-top: 50px;
-      padding-left: 50px;
-    }
-
-    .testtest {
-      margin-top: 300px;
-      margin-left: 100px;
-      margin-right: 20px;
-      align-items: center;
-    }
-
-    .container
-    }
-
-    .test {
-      background: #ffffff
-    }
-
-    .test {
-      margin-top: 1500px;
-    }
-
-    .test {
-      align-items: center;
-      text-align: center;
-      height: 300px;
-      padding-top: 80px;
-    }
-
-
-
-    btn {
-      border-radius: 4px;
-      background-color: #000000;
-      border: none;
-      color: #ffffff;
-      text-align: center;
-      font-size: 28px;
-      padding: 25px;
-      width: 250px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin-left: 20%;
-      align-self: auto;
-      align-content: center;
-      untitled align-items: center;
-
-    }
-
-    .btn span {
-      cursor: pointer;
-      display: inline-block;
+    .wave-container {
       position: relative;
-      transition: 0.5s;
-    }
-
-    .btn span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .btn:hover span {
-      padding-right: 25px;
-    }
-
-    .btn:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-
-    .fruit {
-      padding-top: 70px;
-      align-items: center;
-      align-text: center;
-      align-content: center;
-      margin-left: 45px;
-      margin-top: 1%;
-    }
-
-    .info {
-      color: black;
-      background: violet;
-
-      text-align: center;
-    }
-
-    .card {
-      margin-left: 300px;
-      margin-right: 20px;
-      margin-top: 100px;
-      padding-left: 0px;
-      padding-right: 0px;
-      position: inherit;
-      align-self: center;
-
-
-    }
-
-    .card-body {
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-left: 0px;
-
-    }
-
-
-    .jumbotron {
-      padding-left: 3%;
-      padding-top: 1%;
-      padding-right: 3%;
-
-      ;
-      background-image: linear-gradient(to right, green, blue, indigo, violet);
-
-
-    }
-
-
-    .apple {
-
-      color: white;
-      padding-top: 100px;
-      text-align: center;
-    }
-
-    .lemon {
-
-      color: white;
-      padding-top: 100px;
-      padding-bottom: 20px;
-      text-align: center;
-    }
-
-    .kalamansi {
-
-      margin-top: 70px;
-      margin-bottom: 0%;
-
-
-
-      background-image:
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      background-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-
-    .flex {
-      /*Flexbox for containers*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      overflow: hidden;
     }
 
     .waves {
-      position: static;
       width: 100%;
-      height: 50vh;
-      margin-bottom: -7px;
-      /*Fix for safari gap*/
-      margin-top: -320px;
-      min-height: 200px;
-      max-height: 800px;
-
-
+      height: 300px;
+      margin-bottom: -10px;
     }
 
-    .content {
-      position: relative;
-      height: 20vh;
-      text-align: center;
-      background-color: white;
+    .parallax > use {
+      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     }
-
-    /* Animation */
-
-    .parallax>use {
-      animation: move-forever 15s cubic-bezier(.55, .5, .45, .5) infinite;
-    }
-
-    .parallax>use:nth-child(1) {
-      animation-delay: -2s;
-      animation-duration: 50s;
-    }
-
-    .parallax>use:nth-child(2) {
-      animation-delay: -3s;
-      animation-duration: 25s;
-    }
-
-    .parallax>use:nth-child(3) {
-      animation-delay: -4s;
-      animation-duration: 8s;
-    }
-
-
-    .parallax>use:nth-child(4) {
-      animation-delay: -5s;
-      animation-duration: 10s;
-    }
+    .parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 50s; }
+    .parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 30s; }
+    .parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 18s; }
+    .parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 25s; }
 
     @keyframes move-forever {
-      0% {
-        transform: translate3d(-90px, 0, 0);
-      }
-
-      100% {
-        transform: translate3d(85px, 0, 0);
-      }
+      0% { transform: translate3d(-90px, 0, 0); }
+      100% { transform: translate3d(85px, 0, 0); }
     }
 
-    /*Shrinking for mobile*/
-    @media (max-width: 450px) {
-      .waves {
-        height: 200px;
-        min-height: 100px;
-        margin-top: px;
-        margin-bottom: -250px;
-      }
-
-      .content {
-        height: 2vh;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-    }
-
-
-
-    /* Extra small devices (portrait phones, less than 576px)
-     No media query since this is the default in Bootstrap*/
-
-    /* Small devices (portrait phones, 360px and up)*/
-    @media (min-width: 360px) {
-      ...
-    }
-
-
-    /* Small devices (landscape phones, 576px and up)*/
-    @media (min-width: 576px) {
-      ...
-    }
-
-    /* Medium devices (tablets, 768px and up)*/
-    @media (min-width: 768px) {
-      ...
-    }
-
-    /* Large devices (desktops, 992px and up)*/
-    @media (min-width: 992px) {
-      ...
-    }
-
-    /* Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) {
-      ...
-    }
-
-
-    .card-title {
-      color: #ffffff;
-      margin-left: 50px;
-      margin-top: -25px;
-    }
-
-    .btn {
-      margin-left: 50px;
-    }
-
-    }
-
-    .img-fluid {
-      padding-left: 35px;
-    }
-
-    .boxybutton {
-      border: 0;
-      line-height: 2.5;
-      padding: 10px 10px;
-      font-size: 1.2rem;
-      text-align: center;
-      color: #fff;
-
-      border-radius: 30px;
-      background-color: rgb(16, 112, 255);
-      background-image: linear-gradient(to top left,
-          rgba(0, 0, 0, .2),
-          rgba(0, 0, 0, .2) 30%,
-          rgba(0, 0, 0, 0));
-      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-        inset -2px -2px 3px rgba(0, 0, 0, .6);
-    }
-
-    .boxybutton:hover {
-      background-color: rgb(255, 255, 255);
-    }
-
-    .boxybutton:active {
-      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-}
-    
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
   </style>
-
-
-
-  <title>Richard.Balauro</title>
 </head>
 
-<body class="">
-
-
-  <nav class="navbar navbar-dark bg-dark static">
-    <a class="navbar-brand" href="">
-
-    </a>
-
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="https://www.linkedin.com/in/richardprietobalauro/" target="_blank">LinkedIn</a>
-      </li>
-
-    </ul>
-
+<body class="bg-gradient-to-br from-emerald-500 via-blue-600 via-indigo-600 to-violet-600 text-white min-h-screen">
+  
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-black/30 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold tracking-tight">Ree</a>
+      
+      <div class="flex items-center gap-8">
+        <a href="https://www.linkedin.com/in/richardprietobalauro/" target="_blank" 
+           class="hover:text-emerald-300 transition-colors font-medium">LinkedIn</a>
+      </div>
+    </div>
   </nav>
 
-  <!--<h1 class="head"></h1>-->
-
-
-  <div class="jumbotron jumbotron-fluid">
-
-    <div class="kalamansi">
-      <!--<img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/8c60c0d83b835ff01b872fb52cb1f866-original.jpg" class="img-thumbnail" width="200" height="200" class="rounded-bottom" class="border border-warning" align=right alt="Cover Photo"></div>-->
-      <!--<img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c3/810907/7e8741934aa31a7a6efbc7aea92968aa-original.png" class="img-thumbnail" width="600" height="500" class="rounded-bottom" class="border border-warning" align=right alt="Cover Photo"></div>-->
-      <img
-        src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/9d73cc6d3ab76479480f69458797e63f-original.png"
-        class="img-fluid" align=right alt="Cover Photo">
+  <!-- Hero -->
+  <div class="pt-24 pb-12 px-6 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h1 class="title-font text-6xl md:text-7xl font-bold leading-none">
+          👋 Hi! I'm Ree,<br>I love Tech
+        </h1>
+        <p class="text-xl md:text-2xl text-white/90 max-w-lg">
+          Passionate about creating digital experiences that are enjoyable, valuable, and meaningful.
+        </p>
+      </div>
+      
+      <div class="flex justify-center md:justify-end">
+        <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/9d73cc6d3ab76479480f69458797e63f-original.png" 
+             alt="Cover Photo" 
+             class="w-full max-w-md rounded-2xl shadow-2xl">
+      </div>
     </div>
-    <h1>👋 Hi! I'm Ree, I love Tech</h1> 
-    
-
-   <!-- <p>Welcome to my design portfolio focus on User Advocacy.
-       <br>I am the Hero of Savings, Improvements and Reverse Innovation.
-       <br>Shooting Guard in Basketball arena, friends call me "target" </p>
-
-    <h2>Passionate in making digital and physical products <br>enjoyable, valuable and meaningful to use. 
-
-    </h2>
-
-    <!--<p class="lead">
-      <a clas="bt btn-primary btn-lg" href="#" role="button"></a>
-      <a href="#Ferry" class="boxybutton">VIEW MY CASE STUDIES</a>
-
-    </p>-->
-
-  <!--  <br>
-    <p class="">List of my Design Projects: <br> <a href="https://www.canva.com/design/DADWA_vf6E0/Bl6vpF4dcKApLZZblvb7Zg/view?website#2" target="_blank" class="link-light"> <br> 1. Transportation Ticket Purchase Redesign experience - Deloitte Design Challenge</a> <br><a
-      href="https://docs.google.com/presentation/d/e/2PACX-1vS8Nx10kNQBTwqdM0sQBPkPuQaBHbN9Newaep0X2vrLYoQE_-SkXAFR9iAqjQPSl8kpMZIZbLsNUOL1/pub?start=false&loop=false&delayms=60000&slide=id.g838540be8f_2_48" target="_blank" class="link-light">2. Shopping during pandemic experience - GlobalUXD Design Challenge</a> <br><a
-      <a href="https://www.canva.com/design/DADWAxjxlm0/WZxwD84rt2wL__ke3MP3IQ/view?website#2:lime-bike-juicer-ux-rapid-case-study" target="_blank" class="link-light">3. Electric mobility experience - Personal Project</a> 
-    </p>
-
--->
-
   </div>
 
-
-  <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <!-- Waves -->
+  <div class="wave-container">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
       <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
         <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
         <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
@@ -553,113 +103,74 @@
     </svg>
   </div>
 
+  <!-- Projects -->
+  <div class="bg-white text-gray-900 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">Featured Projects</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/70279683372287cb194999d3804c060b-original.png" 
+               class="w-full h-64 object-cover" alt="BC Ferries">
+          <div class="p-8">
+            <h3 class="font-semibold text-xl mb-3">BC Ferries Ticket Purchase Redesign</h3>
+            <p class="text-gray-600 mb-6">Deloitte Digital Canada Challenge</p>
+            <a href="https://www.canva.com/design/DADWA_vf6E0/Bl6vpF4dcKApLZZblvb7Zg/view?website#2" target="_blank"
+               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
+              View Design Process →
+            </a>
+          </div>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/624de48e0855c5eb6dd42e372e593e60-original.png" 
+               class="w-full h-64 object-cover" alt="COVID Supplies">
+          <div class="p-8">
+            <h3 class="font-semibold text-xl mb-3">Getting Essential Supplies During COVID-19</h3>
+            <p class="text-gray-600 mb-6">GlobalUXD Design Challenge</p>
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vS8Nx10kNQBTwqdM0sQBPkPuQaBHbN9Newaep0X2vrLYoQE_-SkXAFR9iAqjQPSl8kpMZIZbLsNUOL1/pub?start=false&loop=false&delayms=60000#slide=id.g838540be8f_2_48" 
+               target="_blank"
+               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
+              View Design Process →
+            </a>
+          </div>
+        </div>
 
-
-
-  <div class="">
-
-    <div>
-      <img id="Ferry"
-        src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/70279683372287cb194999d3804c060b-original.png"
-        height="" width="" class="img-fluid" alt="Responsive image">
-      <!--<img id="Ferry" src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/f17f853fea9009bde6f166dcb647a318-original.png" class="img-fluid" alt="Responsive image"-->
-      <div class=firstButton>
-        <h4 class="card-title text-dark">BC FERRIES TICKET PURCHASE REDESIGN <br> a Deloitte digital Canada challenge</h4>
-        <a href="https://www.canva.com/design/DADWA_vf6E0/Bl6vpF4dcKApLZZblvb7Zg/view?website#2" target="_blank"
-          class="btn btn-primary">View Design Process</a>
+        <!-- Project 3 -->
+        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c2/865093/edc287dbe5157b2d0441675abd95f3e9-original.svg" 
+               class="w-full h-64 object-cover" alt="Lime Bike">
+          <div class="p-8">
+            <h3 class="font-semibold text-xl mb-3">Lime Bike Collection UX 2.0</h3>
+            <p class="text-gray-600 mb-6">"Fun to use, but hard to find"</p>
+            <a href="https://www.canva.com/design/DADWAxjxlm0/WZxwD84rt2wL__ke3MP3IQ/view?website#2:lime-bike-juicer-ux-rapid-case-study" 
+               target="_blank"
+               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
+              View Design Process →
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
 
-  <div class="stepone">
-    <img
-      src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/624de48e0855c5eb6dd42e372e593e60-original.png"
-      class="img-fluid" alt="Responsive image">
-    <h4 class="card-title">GETTING ESSENTIAL SUPPLIES DURING COVID-19 PANDEMIC <br> Ease access to basic essentials experiences </h4>
-    <a href="https://docs.google.com/presentation/d/e/2PACX-1vS8Nx10kNQBTwqdM0sQBPkPuQaBHbN9Newaep0X2vrLYoQE_-SkXAFR9iAqjQPSl8kpMZIZbLsNUOL1/pub?start=false&loop=false&delayms=60000#slide=id.g838540be8f_2_48"
-      target="_blank" class="btn btn-primary">View Design Process</a>
-  </div>
-
-
-
-
-
-  <div class="">
-
-    <!--<div class="stepone">
-      <img
-        src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/4685913d16aa330f2a762d3c0a3f4da2-original.png"
-        class="img-fluid" alt="Responsive image">
-      <h4 class="card-title">BLOCKCHAIN BASED LOAN APP</h4>
-      <a href="https://www.figma.com/proto/P9FchghdXjSHdOWR3zmx1GTC/Prototype-Crypto-Collateral-Dashboard?node-id=7%3A82&scaling=min-zoom"
-        target="_blank" class="btn btn-primary">View Prototype</a>
-    </div>-->
-
-  </div>
-
-  <div>
-
-    <div class="stepone">
-      <img
-        src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c2/865093/edc287dbe5157b2d0441675abd95f3e9-original.svg"
-        class="img-fluid" alt="Responsive image">
-      <h4 class="card-title">LIME BIKE COLLECTION UX 2.0 "Fun to use, but hard to find"</h4>
-      <a href="https://www.canva.com/design/DADWAxjxlm0/WZxwD84rt2wL__ke3MP3IQ/view?website#2:lime-bike-juicer-ux-rapid-case-study"
-        target="_blank" class="btn btn-primary">View Design Process</a>
+  <!-- Interests -->
+  <div class="py-20 px-6 max-w-7xl mx-auto text-center">
+    <h3 class="text-4xl font-bold mb-10">My Interests</h3>
+    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-lg">
+      <a href="https://www.uxwizards.org/web" target="_blank" class="hover:text-emerald-300 transition-colors">UX Wizards SF Bay Area</a>
+      <a href="https://www.codeforsanjose.com/" target="_blank" class="hover:text-emerald-300 transition-colors">Code for San Jose</a>
+      <a href="https://dribbble.com/agentfive" target="_blank" class="hover:text-emerald-300 transition-colors">Dribbble Shots</a>
+      <span>Micro Startup Development</span>
+      <span>Product Management</span>
     </div>
-
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="foot">
-    <h3> My Interests </h3>
-
-    <a href="https://www.uxwizards.org/web" target="_blank">UX wizards community sf bay area</a> <br><a
-      href="https://www.codeforsanjose.com/" target="_blank">Code for San Jose</a> <br><a
-      href="https://dribbble.com/agentfive" target="_blank">Dribbbleshots</a><br>Micro Startup Development <br>Product
-    Management
-
-
-  </div>
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <footer class="bg-black/80 py-12 text-center text-white/70">
+    <p>© Richard Balauro • Built with Tailwind + Waves</p>
+  </footer>
 </body>
-
 </html>
