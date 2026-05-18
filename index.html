@@ -3,187 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Balauro | Ree</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia&display=swap" rel="stylesheet">
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia&display=swap');
-    
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    
-    .title-font {
-      font-family: 'Sofia', sans-serif;
-    }
-
-    .wave-container {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .waves {
-      width: 100%;
-      height: 300px;
-      margin-bottom: -10px;
-    }
-
-    .parallax > use {
-      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-    }
-    .parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 50s; }
-    .parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 30s; }
-    .parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 18s; }
-    .parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 25s; }
-
-    @keyframes move-forever {
-      0% { transform: translate3d(-90px, 0, 0); }
-      100% { transform: translate3d(85px, 0, 0); }
-    }
-
-    .project-card {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    }
-  </style>
+  <title>Commitdot - Redesign</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <header class="hero">
+    <h1>Welcome to CommitDot</h1>
+    <p>Your go-to source for tech insights and projects.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </header>
 
-<body class="bg-gradient-to-br from-emerald-500 via-blue-600 via-indigo-600 to-violet-600 text-white min-h-screen">
-  
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 right-0 bg-black/30 backdrop-blur-md z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold tracking-tight">Ree</a>
-      
-      <div class="flex items-center gap-8">
-        <a href="https://www.linkedin.com/in/richardprietobalauro/" target="_blank" 
-           class="hover:text-emerald-300 transition-colors font-medium">LinkedIn</a>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>CommitDot is designed to help you thrive in the world of technology. Explore our projects, blogs, and resources.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Our Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>A brief description of this project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>A brief description of this project.</p>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- Hero -->
-  <div class="pt-24 pb-12 px-6 max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6">
-        <h1 class="title-font text-6xl md:text-7xl font-bold leading-none">
-          👋 Hi! I'm Ree,<br>I love Tech
-        </h1>
-        <p class="text-xl md:text-2xl text-white/90 max-w-lg">
-          Passionate about creating digital experiences that are enjoyable, valuable, and meaningful.
-        </p>
-      </div>
-      
-      <div class="flex justify-center md:justify-end">
-        <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/9d73cc6d3ab76479480f69458797e63f-original.png" 
-             alt="Cover Photo" 
-             class="w-full max-w-md rounded-2xl shadow-2xl">
-      </div>
-    </div>
-  </div>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have a question? Reach out via email at <a href="mailto:contact@commitdot.com">contact@commitdot.com</a></p>
+  </section>
 
-  <!-- Waves -->
-  <div class="wave-container">
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
-      </g>
-    </svg>
-  </div>
-
-  <!-- Projects -->
-  <div class="bg-white text-gray-900 py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-16">Featured Projects</h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- New Project: Hardware Intelligence -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-          <img src="https://picsum.photos/id/1015/800/600" 
-               class="w-full h-64 object-cover" alt="Hardware Intelligence">
-          <div class="p-8">
-            <h3 class="font-semibold text-xl mb-3">Hardware Intelligence Prototype</h3>
-            <p class="text-gray-600 mb-6">AI-Powered Hardware & Screen Error Support</p>
-            <a href="https://hardware-vision-architect-02-813452625543.us-west1.run.app" target="_blank"
-               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
-              Try Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <!-- BC Ferries -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/70279683372287cb194999d3804c060b-original.png" 
-               class="w-full h-64 object-cover" alt="BC Ferries">
-          <div class="p-8">
-            <h3 class="font-semibold text-xl mb-3">BC Ferries Ticket Purchase Redesign</h3>
-            <p class="text-gray-600 mb-6">Deloitte Digital Canada Challenge</p>
-            <a href="https://canva.link/kv93cz5uuw6eon7" target="_blank"
-               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
-              View Design Process →
-            </a>
-          </div>
-        </div>
-
-        <!-- Lime Bike -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c2/865093/edc287dbe5157b2d0441675abd95f3e9-original.svg" 
-               class="w-full h-64 object-cover" alt="Lime Bike">
-          <div class="p-8">
-            <h3 class="font-semibold text-xl mb-3">Lime Bike Collection UX 2.0</h3>
-            <p class="text-gray-600 mb-6">"Fun to use, but hard to find"</p>
-            <a href="https://canva.link/rti0j0259p6qvsn" target="_blank"
-               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
-              View Design Process →
-            </a>
-          </div>
-        </div>
-
-        <!-- COVID Supplies -->
-        <div class="project-card bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f9/690602/624de48e0855c5eb6dd42e372e593e60-original.png" 
-               class="w-full h-64 object-cover" alt="COVID Supplies">
-          <div class="p-8">
-            <h3 class="font-semibold text-xl mb-3">Getting Essential Supplies During COVID-19</h3>
-            <p class="text-gray-600 mb-6">GlobalUXD Design Challenge</p>
-            <a href="https://docs.google.com/presentation/d/e/2PACX-1vS8Nx10kNQBTwqdM0sQBPkPuQaBHbN9Newaep0X2vrLYoQE_-SkXAFR9iAqjQPSl8kpMZIZbLsNUOL1/pub?start=false&loop=false&delayms=60000#slide=id.g838540be8f_2_48" 
-               target="_blank"
-               class="inline-block bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3 rounded-2xl transition-colors">
-              View Design Process →
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Interests -->
-  <div class="py-20 px-6 max-w-7xl mx-auto text-center">
-    <h3 class="text-4xl font-bold mb-10">My Interests</h3>
-    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-lg">
-      <a href="https://www.uxwizards.org/web" target="_blank" class="hover:text-emerald-300 transition-colors">UX Wizards SF Bay Area</a>
-      <a href="https://www.codeforsanjose.com/" target="_blank" class="hover:text-emerald-300 transition-colors">Code for San Jose</a>
-      <a href="https://dribbble.com/agentfive" target="_blank" class="hover:text-emerald-300 transition-colors">Dribbble Shots</a>
-      <span>Micro Startup Development</span>
-      <span>Product Management</span>
-    </div>
-  </div>
-
-  <footer class="bg-black/80 py-12 text-center text-white/70">
-    <p>© Richard Balauro • Built with Tailwind + Waves</p>
+  <footer>
+    <p>&copy; 2026 CommitDot. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
