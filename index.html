@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Portfolio | commitdot</title>
+  <style>
+    :root {
+      --bg: #0d1117; --card: #161b22; --border: #30363d;
+      --green: #3fb950; --blue: #58a6ff; --orange: #f0883e;
+      --red: #f85149; --text: #c9d1d9; --muted: #8b949e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 2rem; max-width: 960px; margin: 0 auto;
+    }
+    header { text-align: center; padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+    header h1 { font-size: 2.4rem; color: var(--blue); }
+    header p  { color: var(--muted); margin-top: 0.5rem; font-size: 1.1rem; }
+    .badges   { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
+    .badge    { background: var(--card); border: 1px solid var(--border);
+                padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; }
+    .badge.green  { color: var(--green);  border-color: var(--green); }
+    .badge.blue   { color: var(--blue);   border-color: var(--blue); }
+    .badge.orange { color: var(--orange); border-color: var(--orange); }
+    .badge.red    { color: var(--red);    border-color: var(--red); }
+    .stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+    .stat { text-align: center; }
+    .stat-num   { font-size: 2rem; font-weight: bold; color: var(--green); }
+    .stat-label { color: var(--muted); font-size: 0.85rem; }
+    .section-title { font-size: 1.4rem; color: var(--blue); margin: 2.5rem 0 1rem;
+                     padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.4rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover { border-color: var(--blue); transform: translateY(-3px); }
+    .card-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+    .card h3   { color: var(--blue); margin-bottom: 0.4rem; }
+    .card p    { color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0; }
+    .tag { background: #21262d; border: 1px solid var(--border);
+           padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; color: var(--muted); }
+    .card-links { display: flex; gap: 0.8rem; margin-top: 1rem; }
+    .btn { padding: 0.4rem 1rem; border-radius: 6px; text-decoration: none;
+           font-size: 0.85rem; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.8; }
+    .btn-primary   { background: var(--blue);   color: #0d1117; }
+    .btn-secondary { background: transparent; color: var(--blue); border: 1px solid var(--blue); }
+    .btn-demo      { background: var(--green);  color: #0d1117; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .skill-card  { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+    .skill-card h4 { color: var(--orange); margin-bottom: 0.6rem; font-size: 0.9rem; }
+    .skill-card ul { list-style: none; }
+    .skill-card li { color: var(--muted); font-size: 0.85rem; padding: 0.2rem 0; }
+    .skill-card li::before { content: "▸ "; color: var(--green); }
+    .terminal {
+      background: #010409; border: 1px solid var(--border); border-radius: 8px;
+      padding: 1.2rem; margin-top: 1.5rem; font-family: monospace; font-size: 0.85rem;
+    }
+    .terminal .prompt { color: var(--green); }
+    .terminal .cmd    { color: var(--text); }
+    .terminal .out    { color: var(--muted); }
+    footer { text-align: center; margin-top: 4rem; padding-top: 2rem;
+             border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🛡️ Cybersecurity Portfolio</h1>
+  <p>commitdot · Blue Team · AI Security · Detection Engineering</p>
+  <div class="badges">
+    <span class="badge green">✅ 107 Tests Passing</span>
+    <span class="badge blue">🔵 Blue Team</span>
+    <span class="badge red">🤖 AI Security</span>
+    <span class="badge orange">📋 MITRE ATT&amp;CK</span>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Projects</div></div>
+    <div class="stat"><div class="stat-num">107</div><div class="stat-label">Tests</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">MITRE Techniques</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">SIEM Backends</div></div>
+  </div>
+</header>
+
+<h2 class="section-title">📁 Projects</h2>
+<div class="projects">
+
+  <div class="card">
+    <div class="card-icon">🔬</div>
+    <h3>Log Anomaly Detection</h3>
+    <p>ML-powered SSH auth log analyzer using Isolation Forest. Detects brute force, credential spray, and off-hours access with explainable alerts.</p>
+    <div class="card-tags">
+      <span class="tag">Python</span><span class="tag">scikit-learn</span>
+      <span class="tag">pandas</span><span class="tag">Isolation Forest</span>
+      <span class="tag">T1110.001</span>
+    </div>
+    <div class="card-links">
+      <a class="btn btn-primary" href="https://github.com/commitdot/log-anomaly-detection">GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/commitdot/log-anomaly-detection#readme">Docs</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">🎣</div>
+    <h3>Phishing Email Classifier</h3>
+    <p>NLP-based REST API classifying emails as phishing or legitimate. TF-IDF + Logistic Regression, ~92% accuracy, deployable to Vercel.</p>
+    <div class="card-tags">
+      <span class="tag">Flask</span><span class="tag">TF-IDF</span>
+      <span class="tag">NLP</span><span class="tag">REST API</span>
+      <span class="tag">T1598</span>
+    </div>
+    <div class="card-links">
+      <a class="btn btn-primary" href="https://github.com/commitdot/phishing-classifier">GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/commitdot/phishing-classifier#readme">Docs</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">📜</div>
+    <h3>Sigma Detection Rules</h3>
+    <p>SIEM-agnostic detection rules mapped to MITRE ATT&amp;CK. Compiles to Splunk SPL, Elastic KQL, and QRadar AQL. 35 validation tests.</p>
+    <div class="card-tags">
+      <span class="tag">Sigma</span><span class="tag">Splunk</span>
+      <span class="tag">Elastic</span><span class="tag">MITRE</span>
+      <span class="tag">T1059.001</span>
+    </div>
+    <div class="card-links">
+      <a class="btn btn-primary" href="https://github.com/commitdot/sigma-rules">GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/commitdot/sigma-rules/tree/main/rules">Rules</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="section-title">🛠️ Skills</h2>
+<div class="skills-grid">
+  <div class="skill-card">
+    <h4>🔵 Blue Team</h4>
+    <ul>
+      <li>Splunk · Elastic SIEM</li>
+      <li>Wazuh · QRadar</li>
+      <li>Log analysis</li>
+      <li>Threat hunting</li>
+    </ul>
+  </div>
+  <div class="skill-card">
+    <h4>🤖 AI Security</h4>
+    <ul>
+      <li>Isolation Forest</li>
+      <li>NLP / TF-IDF</li>
+      <li>Anomaly detection</li>
+      <li>OWASP LLM Top 10</li>
+    </ul>
+  </div>
+  <div class="skill-card">
+    <h4>📋 Detection Eng.</h4>
+    <ul>
+      <li>Sigma rules</li>
+      <li>MITRE ATT&amp;CK</li>
+      <li>Splunk SPL</li>
+      <li>Elastic KQL</li>
+    </ul>
+  </div>
+  <div class="skill-card">
+    <h4>💻 Dev</h4>
+    <ul>
+      <li>Python · Flask</li>
+      <li>REST APIs</li>
+      <li>pytest (107 tests)</li>
+      <li>Git · GitHub Actions</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="section-title">🖥️ Live Demo</h2>
+<div class="terminal">
+  <div><span class="prompt">$ </span><span class="cmd">curl -X POST https://phishing-classifier-commitdot.vercel.app/predict \</span></div>
+  <div><span class="cmd">&nbsp;&nbsp;-H "Content-Type: application/json" \</span></div>
+  <div><span class="cmd">&nbsp;&nbsp;-d '{"text": "Urgent: your account will be suspended"}'</span></div>
+  <br>
+  <div><span class="out">{</span></div>
+  <div><span class="out">&nbsp;&nbsp;"label": "phishing",</span></div>
+  <div><span class="out">&nbsp;&nbsp;"confidence": 0.94,</span></div>
+  <div><span class="out">&nbsp;&nbsp;"risk_score": 94</span></div>
+  <div><span class="out">}</span></div>
+</div>
+
+<footer>
+  <p>
+    <a href="https://github.com/commitdot">GitHub</a> ·
+    <a href="https://linkedin.com/in/commitdot">LinkedIn</a> ·
+    Built for entry-level cybersecurity roles
+  </p>
+</footer>
+
+</body>
+</html>
